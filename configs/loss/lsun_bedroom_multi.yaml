@@ -1,0 +1,20 @@
+loss_tag: lsun_bedroom
+
+middle:
+
+  - type: l2
+    target: state
+    weight: 1.0
+  # - type: pseudo_huber
+  #   target: state
+  #   weight: 1.0
+  #   delta: 0.24
+  
+endpoint:
+  - type: l2
+    target: state
+    weight: 1.0
+  # - type: inception
+  #   target: state
+  #   weight: 1.0
+  

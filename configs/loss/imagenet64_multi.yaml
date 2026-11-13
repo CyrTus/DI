@@ -1,0 +1,17 @@
+loss_tag: imagenet64
+
+middle:
+  - type: l2
+    target: state
+    weight: 1.0
+  # - type: pseudo_huber
+  #   target: state
+  #   weight: 1.0
+  #   delta: 0.06
+endpoint:
+  - type: l2
+    target: state
+    weight: 1.0
+  # - type: inception
+    # target: state
+    # weight: 1.0

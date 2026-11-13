@@ -1,0 +1,14 @@
+loss_tag: ms_coco
+
+middle:
+  - type: l2
+    target: state
+    weight: 1.0
+
+endpoint:
+  # - type: l2
+  #   target: state
+  #   weight: 1.0
+  - type: dinov2         # DINOv2 perceptual loss（decode 到像素空间后提特征）
+    target: state
+    weight: 1.0

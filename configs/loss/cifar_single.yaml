@@ -1,0 +1,18 @@
+loss_tag: cifar10
+
+middle:
+  - type: l2
+    target: state
+    weight: 1.0
+  # - type: pseudo_huber
+  #   target: clean
+  #   weight: 1.0
+  #   delta: 0.03
+endpoint:
+  - type: l2
+    target: state
+    weight: 1.0
+  # - type: inception
+  #   target: state
+  #   weight: 1.0
+
